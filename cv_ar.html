@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>عبدالله الدودي - سيرة ذاتية مطور ويب فول ستاك</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Cairo', sans-serif; color: #111827; background: #ffffff; font-size: 8.5pt; line-height: 1.4; direction: rtl; -webkit-font-smoothing: antialiased; }
+    .sheet { width: 210mm; min-height: 297mm; max-height: 297mm; margin: 0 auto; padding: 3mm 12mm 4mm 12mm; background: #ffffff; overflow: hidden; }
+
+    /* HEADER */
+    header { border-bottom: 1.5px solid #111827; padding-bottom: 4px; margin-bottom: 4px; }
+    .header-top { display: flex; justify-content: space-between; align-items: center; }
+    .name-role h1 { font-size: 18pt; font-weight: 800; color: #0f172a; line-height: 1.1; }
+    .name-role .target-title { font-size: 9.5pt; font-weight: 700; color: #1d4ed8; margin-top: 2px; }
+    .profile-photo { width: 52px; height: 62px; border-radius: 4px; border: 1.5px solid #cbd5e1; object-fit: cover; object-position: center top; display: block; }
+
+    /* CONTACT ROW - RTL: icon on RIGHT, text on LEFT */
+    .contact-row { margin-top: 3px; margin-bottom: 1px; font-size: 7.9pt; color: #334155; display: flex; flex-wrap: wrap; row-gap: 3px; column-gap: 7px; align-items: center; justify-content: flex-start; }
+    .contact-item { display: inline-flex; align-items: center; flex-direction: row-reverse; gap: 3px; }
+    .contact-row a { color: #0f172a; text-decoration: underline; text-underline-offset: 2px; font-weight: 600; display: inline-flex; align-items: center; flex-direction: row-reverse; gap: 3px; }
+    .sep { color: #94a3b8; font-weight: 300; }
+
+    /* SECTIONS */
+    section { margin-bottom: 3px; }
+    h2.section-header { font-size: 8.3pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.4px; color: #0f172a; border-bottom: 1px solid #cbd5e1; padding-bottom: 1px; margin-bottom: 2px; }
+
+    /* SUMMARY */
+    .summary-p { font-size: 7.9pt; color: #334155; text-align: justify; line-height: 1.5; }
+
+    /* SKILLS */
+    .skills-block { display: flex; flex-direction: column; gap: 0.5px; font-size: 7.8pt; }
+    .skill-line { display: flex; align-items: baseline; line-height: 1.35; }
+    .skill-label { min-width: 160px; font-weight: 700; color: #0f172a; flex-shrink: 0; }
+    .skill-tags { color: #334155; flex: 1; }
+
+    /* EXPERIENCE */
+    .entry { margin-bottom: 2.5px; }
+    .entry:last-child { margin-bottom: 0; }
+    .entry-head { display: flex; justify-content: space-between; align-items: baseline; line-height: 1.2; }
+    .entry-head-left { text-align: right; }
+    .role-title { font-size: 8.3pt; font-weight: 700; color: #0f172a; }
+    .role-company { font-weight: 600; color: #1e293b; }
+    .entry-date-loc { font-size: 7.4pt; color: #475569; font-weight: 600; white-space: nowrap; text-align: left; }
+    ul.bullet-list { list-style-type: disc; padding-right: 14px; padding-left: 0; margin-top: 1px; }
+    ul.bullet-list li { font-size: 7.8pt; color: #334155; line-height: 1.35; margin-bottom: 0.5px; }
+    ul.bullet-list li::marker { color: #2563eb; font-size: 6pt; }
+
+    /* PROJECTS */
+    .project-entry { margin-bottom: 2px; }
+    .project-entry:last-child { margin-bottom: 0; }
+    .project-title-line { display: flex; justify-content: space-between; align-items: baseline; font-size: 8.2pt; line-height: 1.2; }
+    .project-title { font-weight: 700; color: #0f172a; }
+    .project-link { font-size: 7.5pt; color: #0f172a; text-decoration: underline; font-weight: 600; direction: ltr; text-align: left; }
+    .project-tech { font-size: 7.3pt; font-weight: 600; color: #475569; margin-top: 0.5px; margin-bottom: 0.5px; text-align: right; }
+    .project-desc { font-size: 7.8pt; color: #334155; line-height: 1.35; }
+
+    /* EDUCATION */
+    .edu-entry { display: flex; justify-content: space-between; align-items: baseline; line-height: 1.3; margin-bottom: 2px; }
+    .edu-left { text-align: right; }
+    .edu-title { font-size: 8pt; font-weight: 700; color: #0f172a; display: block; }
+    .edu-inst { font-size: 7.7pt; color: #334155; display: block; }
+    .edu-year { font-size: 7.4pt; color: #475569; font-weight: 600; white-space: nowrap; text-align: left; }
+
+    /* META */
+    .meta-grid { display: grid; grid-template-columns: 1fr 1.3fr 1.2fr; gap: 10px; font-size: 7.8pt; padding-top: 1px; }
+    .meta-item { text-align: right; }
+    .meta-item strong { font-weight: 700; color: #0f172a; }
+    .meta-item span { color: #334155; }
+
+    @media print {
+      body { background: #fff; }
+      .sheet { width: 210mm; height: 297mm; padding: 6mm 12mm 4mm 12mm; margin: 0; }
+      a { color: #0f172a !important; }
+      @page { size: A4 portrait; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+
+    <header>
+      <div class="header-top">
+        <div class="name-role">
+          <h1>عبدالله الدودي</h1>
+          <div class="target-title">مطوّر ويب فول ستاك</div>
+        </div>
+        <img class="profile-photo" src="assets/profile.jpg" alt="عبدالله الدودي" />
+      </div>
+      <div class="contact-row">
+        <span class="contact-item">العيون، المغرب <svg style="width:11px;height:11px;fill:#dc2626;flex-shrink:0;" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+        <span class="sep">|</span>
+        <span class="contact-item"><span dir="ltr">+212 609 085 357</span> <svg style="width:11px;height:11px;fill:#16a34a;flex-shrink:0;" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></span>
+        <span class="sep">|</span>
+        <a href="mailto:abdellahedaoudi.dev@gmail.com">abdellahedaoudi.dev@gmail.com <svg style="width:11px;height:11px;fill:#2563eb;flex-shrink:0;" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+        <span class="sep">|</span>
+        <a href="https://abdellah-edaoudi.vercel.app" target="_blank">abdellah-edaoudi.vercel.app <svg style="width:11px;height:11px;fill:#0d9488;flex-shrink:0;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a>
+        <div style="flex-basis:100%;width:100%;height:0;"></div>
+        <a href="https://github.com/AbdellahEdaoudi" target="_blank">github.com/AbdellahEdaoudi <svg style="width:11px;height:11px;fill:#181717;flex-shrink:0;" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+        <span class="sep">|</span>
+        <a href="https://linkedin.com/in/abdellah-edaoudi" target="_blank">linkedin.com/in/abdellah-edaoudi <svg style="width:14px;height:14px;fill:#0a66c2;flex-shrink:0;" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.74a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z"/></svg></a>
+      </div>
+    </header>
+
+    <!-- الملخص المهني -->
+    <section>
+      <h2 class="section-header">الملخص المهني</h2>
+      <p class="summary-p">مطوّر فول ستاك حاصل على دبلوم تقني متخصص في التطوير الرقمي — تخصص ويب فول ستاك من مدينة المهن والكفاءات (CMC)، وأمتلك أكثر من سنتين من الخبرة العملية في تطوير الويب. متخصص في React.js وNext.js وNode.js وNestJS، بخبرة في تصميم وبناء تطبيقات ويب آمنة وقابلة للتوسع وعالية الأداء، تشمل منصات SaaS والأنظمة الفورية وحلول التجارة الإلكترونية. أمتلك معرفة قوية بـ RESTful APIs والمصادقة وإدارة قواعد البيانات وتكامل الدفع ونشر CI/CD. مع تركيز على الكود النظيف والأداء والأمان وتجربة المستخدم.</p>
+    </section>
+
+    <!-- المهارات التقنية -->
+    <section>
+      <h2 class="section-header">المهارات التقنية</h2>
+      <div class="skills-block">
+        <div class="skill-line"><span class="skill-label">الواجهة الأمامية:</span><span class="skill-tags">shadcn/ui, Bootstrap, Tailwind CSS, TypeScript, JavaScript, Next.js, React.js</span></div>
+        <div class="skill-line"><span class="skill-label">الواجهة الخلفية:</span><span class="skill-tags">Socket.IO, RESTful APIs, NestJS, Express.js, Node.js</span></div>
+        <div class="skill-line"><span class="skill-label">قواعد البيانات:</span><span class="skill-tags">MongoDB</span></div>
+        <div class="skill-line"><span class="skill-label">المصادقة والأمان:</span><span class="skill-tags">RBAC, JWT, NextAuth.js, Bcrypt</span></div>
+        <div class="skill-line"><span class="skill-label">أنظمة الدفع:</span><span class="skill-tags">Stripe, PayPal</span></div>
+        <div class="skill-line"><span class="skill-label">DevOps والأدوات:</span><span class="skill-tags">CI/CD, SonarQube, Postman, Vercel, GitHub, Git, Docker</span></div>
+        <div class="skill-line"><span class="skill-label">الهندسة المعمارية:</span><span class="skill-tags">Microservices, تطبيقات SaaS, MVC</span></div>
+      </div>
+    </section>
+
+    <!-- الخبرة المهنية -->
+    <section>
+      <h2 class="section-header">الخبرة المهنية</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <div class="entry-head-left"><span class="role-title">مؤسس ومطوّر فول ستاك</span> - <span class="role-company">DGT Portfolio</span></div>
+          <span class="entry-date-loc">أكتوبر 2025 – حاليًا | عن بُعد</span>
+        </div>
+        <ul class="bullet-list">
+          <li>بناء وصيانة منصة SaaS بـ Next.js لإنشاء المحافظ المهنية، مع تكامل مدفوعات PayPal ودعم النطاقات المخصصة.</li>
+          <li>تطوير واجهات برمجية RESTful آمنة باستخدام Node.js وExpress.js مع مصادقة JWT/NextAuth.js والتحكم في الوصول (RBAC).</li>
+          <li>تطبيق تحسينات الأداء وSEO باستخدام التصيير من جانب الخادم (SSR) وممارسات تطوير الويب الحديثة.</li>
+          <li>إدارة نشر التطبيق على Vercel وسير عمل CI/CD باستخدام Git وGitHub.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <div class="entry-head-left"><span class="role-title">متدرب مطوّر فول ستاك</span> - <span class="role-company">مدينة المهن والكفاءات</span></div>
+          <span class="entry-date-loc">سبتمبر 2023 – يونيو 2024 | العيون، المغرب</span>
+        </div>
+        <ul class="bullet-list">
+          <li>تطوير تطبيقات ويب متجاوبة وتفاعلية باستخدام React.js وJavaScript.</li>
+          <li>بناء خدمات الواجهة الخلفية وواجهات RESTful بـ Node.js وExpress.js مع خبرة في Laravel/PHP.</li>
+          <li>تصميم وإدارة قواعد البيانات باستخدام MongoDB وMySQL.</li>
+          <li>تطبيق منهجيات Agile/Scrum وأدوات Docker وGit/GitHub وSonarQube.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <div class="entry-head-left"><span class="role-title">متدرب مطوّر فول ستاك MERN</span> - <span class="role-company">الأكاديمية الجهوية للتربية والتكوين</span></div>
+          <span class="entry-date-loc">مارس 2024 | العيون، المغرب</span>
+        </div>
+        <ul class="bullet-list">
+          <li>تصميم وتطوير تطبيق فول ستاك لإدارة المهام مع مصادقة JWT، ونشره على Vercel.</li>
+          <li>تطوير نقاط نهاية RESTful API واختبارها باستخدام Postman.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <div class="entry-head-left"><span class="role-title">متدرب مطوّر رقمي</span> - <span class="role-company">مدينة المهن والكفاءات</span></div>
+          <span class="entry-date-loc">نوفمبر 2022 – يونيو 2023 | العيون، المغرب</span>
+        </div>
+        <ul class="bullet-list">
+          <li>تطوير مواقع ويب باستخدام HTML وCSS وJavaScript وPHP والعمل مع قواعد بيانات SQL.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- المشاريع الرئيسية -->
+    <section>
+      <h2 class="section-header">المشاريع الرئيسية</h2>
+      <div class="project-entry">
+        <div class="project-title-line">
+          <span class="project-title">منصة إنشاء المحافظ المهنية (SaaS)</span>
+          <a class="project-link" href="https://dgtportfolio.com" target="_blank">dgtportfolio.com</a>
+        </div>
+        <div class="project-tech">Next.js · Node.js · Express · MongoDB · PayPal · Cloudinary</div>
+        <p class="project-desc">منصة SaaS لإنشاء المحافظ المهنية مع دعم متعدد اللغات، نطاقات مخصصة، اختيار ديناميكي للسمات، توليد السيرة الذاتية فورياً، ولوحة إدارة شاملة.</p>
+      </div>
+      <div class="project-entry">
+        <div class="project-title-line">
+          <span class="project-title">نظام حجز الفنادق</span>
+          <a class="project-link" href="https://edhotel.vercel.app" target="_blank">edhotel.vercel.app</a>
+        </div>
+        <div class="project-tech">Next.js · Node.js · MongoDB · Stripe · JWT · Cloudinary</div>
+        <p class="project-desc">نظام حجز فنادق مع دفع إلكتروني، توليد تذاكر، تأكيدات بريدية، ولوحة إدارة لإدارة الحجوزات والمدفوعات مع APIs آمنة.</p>
+      </div>
+      <div class="project-entry">
+        <div class="project-title-line">
+          <span class="project-title">نظام محادثة فوري آمن</span>
+          <a class="project-link" href="https://edchatflow.vercel.app" target="_blank">edchatflow.vercel.app</a>
+        </div>
+        <div class="project-tech">Next.js · Node.js · Socket.IO · MongoDB · JWT · Bcrypt</div>
+        <p class="project-desc">تطبيق محادثة فورية مع تشفير من طرف إلى طرف، مصادقة آمنة، وإدارة المستخدمين والمحادثات بأداء عالٍ.</p>
+      </div>
+      <div class="project-entry">
+        <div class="project-title-line">
+          <span class="project-title">واجهة خلفية للتجارة الإلكترونية (NestJS)</span>
+          <span class="project-link"></span>
+        </div>
+        <div class="project-tech">NestJS · TypeScript · MongoDB · Stripe · JWT · RBAC</div>
+        <p class="project-desc">واجهة خلفية قابلة للتوسع مع مصادقة آمنة وRBAC، تشمل إدارة المنتجات والطلبات والكوبونات وتكامل Stripe.</p>
+      </div>
+    </section>
+
+    <!-- التعليم -->
+    <section>
+      <h2 class="section-header">التعليم</h2>
+      <div class="edu-entry">
+        <div class="edu-left">
+          <span class="edu-title">دبلوم تقني متخصص (DTS) — التطوير الرقمي، تخصص ويب فول ستاك</span>
+          <span class="edu-inst">مدينة المهن والكفاءات (CMC) — العيون، المغرب</span>
+        </div>
+        <span class="edu-year">2022 – 2024</span>
+      </div>
+      <div class="edu-entry">
+        <div class="edu-left">
+          <span class="edu-title">شهادة البكالوريا — علوم فيزيائية</span>
+          <span class="edu-inst">ثانوية بابا أحمد بن محمد يحظيه — العيون، المغرب</span>
+        </div>
+        <span class="edu-year">2021 – 2022</span>
+      </div>
+    </section>
+
+    <!-- معلومات إضافية -->
+    <section>
+      <h2 class="section-header">مهارات ومعلومات إضافية</h2>
+      <div class="meta-grid">
+        <div class="meta-item"><strong>المعلومات:</strong><br /><span>رخصة القيادة: صنف B</span></div>
+        <div class="meta-item"><strong>المهارات الشخصية:</strong><br /><span>حل المشكلات، العمل الجماعي، التواصل، التكيف، إدارة الوقت</span></div>
+        <div class="meta-item"><strong>اللغات:</strong><br /><span>العربية (اللغة الأم)، الفرنسية (مهني)، الإنجليزية (مهني)</span></div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
+
+
+
+
+

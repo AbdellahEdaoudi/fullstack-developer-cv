@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdellah Edaoudi - Lebenslauf Full Stack Webentwickler</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Times New Roman', Times, serif; color: #111827; background: #ffffff; font-size: 8.8pt; line-height: 1.35; -webkit-font-smoothing: antialiased; }
+    .sheet { width: 210mm; min-height: 297mm; max-height: 297mm; margin: 0 auto; padding: 2mm 12mm 8mm 12mm; background: #ffffff; overflow: hidden; }
+    header { border-bottom: 1.5px solid #111827; padding-bottom: 5px; margin-bottom: 5px; }
+    .header-top { display: flex; justify-content: space-between; align-items: center; }
+    .name-role h1 { font-size: 19pt; font-weight: 800; letter-spacing: -0.5px; color: #0f172a; line-height: 1; text-transform: uppercase; }
+    .name-role .target-title { font-size: 9.5pt; font-weight: 600; color: #1d4ed8; margin-top: 3px; letter-spacing: 0.3px; }
+    .profile-photo { width: 52px; height: 62px; border-radius: 4px; border: 1.5px solid #cbd5e1; object-fit: cover; object-position: center top; display: block; }
+    .contact-row { margin-top: 4px; margin-bottom: 2px; font-size: 8.1pt; color: #334155; display: flex; flex-wrap: wrap; row-gap: 4px; column-gap: 8px; align-items: center; line-height: 1.35; }
+    .contact-item { display: inline-flex; align-items: center; gap: 3px; }
+    .contact-row a { color: #0f172a; text-decoration: underline; text-underline-offset: 2px; font-weight: 500; display: inline-flex; align-items: center; gap: 3px; }
+    .sep { color: #94a3b8; font-weight: 300; }
+    section { margin-bottom: 4px; }
+    h2.section-header { font-size: 8.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #0f172a; border-bottom: 1px solid #cbd5e1; padding-bottom: 1px; margin-bottom: 2.5px; }
+    .summary-p { font-size: 8pt; color: #334155; text-align: justify; line-height: 1.3; }
+    .skills-block { display: flex; flex-direction: column; gap: 1px; font-size: 7.9pt; }
+    .skill-line { display: flex; line-height: 1.25; }
+    .skill-label { width: 172px; flex-shrink: 0; font-weight: 700; color: #0f172a; }
+    .skill-tags { color: #334155; }
+    .entry { margin-bottom: 3px; }
+    .entry:last-child { margin-bottom: 0; }
+    .entry-head { display: flex; justify-content: space-between; align-items: baseline; line-height: 1.2; }
+    .role-title { font-size: 8.4pt; font-weight: 700; color: #0f172a; }
+    .role-company { font-weight: 600; color: #1e293b; }
+    .entry-date-loc { font-size: 7.5pt; color: #475569; font-weight: 500; white-space: nowrap; }
+    ul.bullet-list { list-style-type: disc; padding-left: 15px; margin-top: 1.5px; }
+    ul.bullet-list li { font-size: 7.9pt; color: #334155; line-height: 1.3; margin-bottom: 1px; }
+    ul.bullet-list li::marker { color: #2563eb; font-size: 6.5pt; }
+    .project-entry { margin-bottom: 2.5px; }
+    .project-entry:last-child { margin-bottom: 0; }
+    .project-title-line { display: flex; justify-content: space-between; align-items: baseline; font-size: 8.3pt; line-height: 1.25; }
+    .project-title { font-weight: 700; color: #0f172a; }
+    .project-link { font-size: 7.7pt; color: #0f172a; text-decoration: underline; font-weight: 500; }
+    .project-tech { font-size: 7.5pt; font-weight: 600; color: #475569; margin-top: 0.5px; margin-bottom: 1px; }
+    .project-desc { font-size: 7.9pt; color: #334155; line-height: 1.3; }
+    .edu-entry { display: flex; justify-content: space-between; align-items: baseline; line-height: 1.25; margin-bottom: 2px; }
+    .edu-title { font-size: 8.2pt; font-weight: 700; color: #0f172a; }
+    .edu-inst { font-size: 7.8pt; color: #334155; }
+    .edu-year { font-size: 7.6pt; color: #475569; font-weight: 500; white-space: nowrap; }
+    .meta-grid { display: grid; grid-template-columns: 1.2fr 1.3fr 1fr; gap: 12px; font-size: 7.8pt; padding-top: 1px; }
+    .meta-item strong { font-weight: 700; color: #0f172a; }
+    .meta-item span { color: #334155; }
+    @media print { body { background: #fff; } .sheet { width: 210mm; height: 297mm; padding: 8mm 12mm 6mm 12mm; margin: 0; } a { color: #0f172a !important; } @page { size: A4 portrait; margin: 0; } }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <header>
+      <div class="header-top">
+        <div class="name-role">
+          <h1>ABDELLAH EDAOUDI</h1>
+          <div class="target-title">Full Stack Webentwickler</div>
+        </div>
+        <img class="profile-photo" src="assets/profile.jpg" alt="Abdellah Edaoudi" />
+      </div>
+      <div class="contact-row">
+        <span class="contact-item"><svg style="width:11px;height:11px;fill:#dc2626;flex-shrink:0;" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Laayoune, Marokko</span>
+        <span class="sep">|</span>
+        <span class="contact-item"><svg style="width:11px;height:11px;fill:#16a34a;flex-shrink:0;" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg> +212 609 085 357</span>
+        <span class="sep">|</span>
+        <a href="mailto:abdellahedaoudi.dev@gmail.com"><svg style="width:11px;height:11px;fill:#2563eb;flex-shrink:0;" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg> abdellahedaoudi.dev@gmail.com</a>
+        <span class="sep">|</span>
+        <a href="https://abdellah-edaoudi.vercel.app" target="_blank"><svg style="width:11px;height:11px;fill:#0d9488;flex-shrink:0;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> abdellah-edaoudi.vercel.app</a>
+        <div style="flex-basis:100%;width:100%;height:0;"></div>
+        <a href="https://github.com/AbdellahEdaoudi" target="_blank"><svg style="width:11px;height:11px;fill:#181717;flex-shrink:0;" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> github.com/AbdellahEdaoudi</a>
+        <span class="sep">|</span>
+        <a href="https://linkedin.com/in/abdellah-edaoudi" target="_blank"><svg style="width:14px;height:14px;fill:#0a66c2;flex-shrink:0;" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.74a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z"/></svg> linkedin.com/in/abdellah-edaoudi</a>
+      </div>
+    </header>
+
+    <!-- BERUFLICHES PROFIL -->
+    <section>
+      <h2 class="section-header">Berufliches Profil</h2>
+      <p class="summary-p">Full Stack Entwickler mit einem Diplom in Digitaler Entwicklung – Full Stack Web Option von der Cité des Métiers et des Compétences (CMC) und mehr als 2 Jahren praktischer Erfahrung in der Webentwicklung. Spezialisiert auf React.js, Next.js, Node.js und NestJS mit umfangreicher Erfahrung im Entwurf und der Entwicklung sicherer, skalierbarer und leistungsstarker Webanwendungen, einschließlich SaaS-Plattformen, Echtzeitsysteme und E-Commerce-Lösungen. Fundierte Kenntnisse in RESTful APIs, Authentifizierung und Autorisierung, Datenbankmanagement, Zahlungsintegration und CI/CD-Deployment. Fokus auf sauberem Code, Performance, Sicherheit und Benutzererfahrung.</p>
+    </section>
+
+    <!-- TECHNISCHE KOMPETENZEN -->
+    <section>
+      <h2 class="section-header">Technische Kompetenzen</h2>
+      <div class="skills-block">
+        <div class="skill-line"><span class="skill-label">Front-End:</span><span class="skill-tags">React.js, Next.js, JavaScript, TypeScript, Tailwind CSS, Bootstrap, shadcn/ui</span></div>
+        <div class="skill-line"><span class="skill-label">Back-End:</span><span class="skill-tags">Node.js, Express.js, NestJS, RESTful APIs, Socket.IO</span></div>
+        <div class="skill-line"><span class="skill-label">Datenbank:</span><span class="skill-tags">MongoDB</span></div>
+        <div class="skill-line"><span class="skill-label">Authentifizierung &amp; Sicherheit:</span><span class="skill-tags">JWT, NextAuth.js, Bcrypt, Rollenbasierte Zugriffskontrolle (RBAC)</span></div>
+        <div class="skill-line"><span class="skill-label">Zahlungssysteme:</span><span class="skill-tags">Stripe, PayPal</span></div>
+        <div class="skill-line"><span class="skill-label">DevOps &amp; Tools:</span><span class="skill-tags">Docker, Git, GitHub, Vercel, Postman, SonarQube, CI/CD</span></div>
+        <div class="skill-line"><span class="skill-label">Architektur &amp; Konzepte:</span><span class="skill-tags">MVC, SaaS-Anwendungen, Microservices</span></div>
+      </div>
+    </section>
+
+    <!-- BERUFSERFAHRUNG -->
+    <section>
+      <h2 class="section-header">Berufserfahrung</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <div><span class="role-title">Gründer &amp; Full Stack Entwickler</span> - <span class="role-company">DGT Portfolio</span></div>
+          <span class="entry-date-loc">Okt 2025 – Aktuell | Remote</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Entwicklung und Pflege einer Next.js SaaS-Plattform für professionelle Portfolio-Erstellung mit PayPal-Zahlungsintegration und Unterstützung für benutzerdefinierte Domains.</li>
+          <li>Entwicklung sicherer RESTful APIs mit Node.js und Express.js, mit JWT/NextAuth.js-Authentifizierung und rollenbasierter Zugriffskontrolle (RBAC).</li>
+          <li>Implementierung von Performance- und SEO-Optimierungen mittels Server-Side Rendering (SSR) und modernen Webentwicklungspraktiken.</li>
+          <li>Verwaltung des Anwendungs-Deployments auf Vercel und CI/CD-Workflows mit Git und GitHub.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <div><span class="role-title">Full Stack Entwickler Praktikant</span> - <span class="role-company">Cité des Métiers et des Compétences</span></div>
+          <span class="entry-date-loc">Sep 2023 – Jun 2024 | Laayoune, Marokko</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Entwicklung reaktionsfähiger und interaktiver Webanwendungen mit React.js und JavaScript.</li>
+          <li>Erstellung von Back-End-Services und RESTful APIs mit Node.js und Express.js sowie Erfahrung in Laravel/PHP.</li>
+          <li>Entwurf und Verwaltung von Datenbanken mit MongoDB und MySQL.</li>
+          <li>Anwendung von Agile/Scrum-Methoden in Planung, Entwicklung, Tests und Lieferung.</li>
+          <li>Einsatz von Docker, Git/GitHub und SonarQube für Entwicklung, Versionskontrolle und Code-Qualitätsanalyse.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <div><span class="role-title">Full Stack MERN Entwickler Praktikant</span> - <span class="role-company">Académie Régionale d'Éducation et de Formation</span></div>
+          <span class="entry-date-loc">Mär 2024 | Laayoune, Marokko</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Entwurf und Entwicklung einer Full-Stack-Aufgabenverwaltungsanwendung mit JWT-basierter Authentifizierung.</li>
+          <li>Entwicklung von RESTful API-Endpunkten und Tests mit Postman.</li>
+          <li>Deployment der Anwendung auf Vercel.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <div><span class="role-title">Digital Entwickler Praktikant</span> - <span class="role-company">Cité des Métiers et des Compétences</span></div>
+          <span class="entry-date-loc">Nov 2022 – Jun 2023 | Laayoune, Marokko</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Anwendung von Programmier- und Algorithmenkonzepten durch praktische Projekte.</li>
+          <li>Entwicklung statischer und dynamischer Websites mit HTML, CSS, JavaScript und PHP.</li>
+          <li>Arbeit mit SQL-Datenbanken und Anwendung grundlegender Informationssystemsicherheitspraktiken.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SCHLÜSSELPROJEKTE -->
+    <section>
+      <h2 class="section-header">Schlüsselprojekte</h2>
+      <div class="project-entry">
+        <div class="project-title-line">
+          <span class="project-title">Professionelle Portfolio-Builder-Plattform (SaaS)</span>
+          <a class="project-link" href="https://dgtportfolio.com" target="_blank">dgtportfolio.com</a>
+        </div>
+        <div class="project-tech">Next.js · Node.js · Express · MongoDB · PayPal · Cloudinary</div>
+        <p class="project-desc">SaaS-Plattform zur Erstellung professioneller Portfolios mit Mehrsprachunterstützung, benutzerdefinierter Domain-Integration, dynamischer Theme-Auswahl, Echtzeit-Lebenslauf-Generierung und einem Admin-Dashboard zur Verwaltung von Inhalten, Abonnements und Analysen.</p>
+      </div>
+      <div class="project-entry">
+        <div class="project-title-line">
+          <span class="project-title">Hotelreservierungssystem</span>
+          <a class="project-link" href="https://edhotel.vercel.app" target="_blank">edhotel.vercel.app</a>
+        </div>
+        <div class="project-tech">Next.js · Node.js · MongoDB · Stripe · JWT · Cloudinary</div>
+        <p class="project-desc">Hotelbuchungssystem mit Online-Zahlungsintegration, elektronischer Ticket-Generierung und E-Mail-Bestätigungen. Enthält ein Admin-Dashboard zur Verwaltung von Reservierungen, Zahlungen und Kunden mit gesicherten APIs und JWT-Authentifizierung.</p>
+      </div>
+      <div class="project-entry">
+        <div class="project-title-line">
+          <span class="project-title">Sicheres Echtzeit-Chat-System</span>
+          <a class="project-link" href="https://edchatflow.vercel.app" target="_blank">edchatflow.vercel.app</a>
+        </div>
+        <div class="project-tech">Next.js · Node.js · Socket.IO · MongoDB · JWT · Bcrypt</div>
+        <p class="project-desc">Echtzeit-Chat-Anwendung mit Sofortnachrichten und Ende-zu-Ende-Verschlüsselung für Nachrichtenprivatsphäre. Implementierung sicherer Authentifizierung, Benutzer- und Gesprächsverwaltung mit Fokus auf Performance und Benutzererfahrung.</p>
+      </div>
+      <div class="project-entry">
+        <div class="project-title-line">
+          <span class="project-title">E-Commerce Back-End (NestJS)</span>
+        </div>
+        <div class="project-tech">NestJS · TypeScript · MongoDB · Stripe · JWT · RBAC</div>
+        <p class="project-desc">Skalierbares E-Commerce-Backend mit sicherer Authentifizierung und rollenbasierter Zugriffskontrolle. Implementierung von Benutzerverwaltung, Produktkatalog, Warenkorb, Bestellverarbeitung, Couponverwaltung und Stripe-Zahlungsintegration nach einer sauberen und wartbaren API-Architektur.</p>
+      </div>
+    </section>
+
+    <!-- BILDUNG -->
+    <section>
+      <h2 class="section-header">Bildung</h2>
+      <div class="edu-entry">
+        <div>
+          <span class="edu-title">Diplom Spezialisierter Techniker (DTS) – Digitale Entwicklung, Web Full Stack Option</span>
+          <div class="edu-inst">Cité des Métiers et des Compétences (CMC) – Laayoune, Marokko</div>
+        </div>
+        <span class="edu-year">2022 – 2024</span>
+      </div>
+      <div class="edu-entry">
+        <div>
+          <span class="edu-title">Abitur – Physikalische Wissenschaften</span>
+          <div class="edu-inst">Lycée Baba Ahmed Ben Mohammed Yahdih – Laayoune, Marokko</div>
+        </div>
+        <span class="edu-year">2021 – 2022</span>
+      </div>
+    </section>
+
+    <!-- KOMPETENZEN & ZUSÄTZLICHE INFORMATIONEN -->
+    <section>
+      <h2 class="section-header">Kompetenzen &amp; Zusätzliche Informationen</h2>
+      <div class="meta-grid">
+        <div class="meta-item"><strong>Sprachen:</strong><br /><span>Arabisch (Muttersprache), Französisch (Berufliche Kenntnisse), Englisch (Berufliche Kenntnisse)</span></div>
+        <div class="meta-item"><strong>Soft Skills:</strong><br /><span>Problemlösung, Teamarbeit, Kommunikation, Anpassungsfähigkeit, Zeitmanagement</span></div>
+        <div class="meta-item"><strong>Sonstiges:</strong><br /><span>Führerschein: Klasse B</span></div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
+
