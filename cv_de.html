@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
@@ -8,11 +8,11 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Times New Roman', Times, serif; color: #111827; background: #ffffff; font-size: 8.8pt; line-height: 1.35; -webkit-font-smoothing: antialiased; }
     .sheet { width: 210mm; min-height: 297mm; max-height: 297mm; margin: 0 auto; padding: 2mm 12mm 8mm 12mm; background: #ffffff; overflow: hidden; }
-    header { border-bottom: 1.5px solid #111827; padding-bottom: 5px; margin-bottom: 5px; }
-    .header-top { display: flex; justify-content: space-between; align-items: center; }
+    header { border-bottom: 1.5px solid #111827; padding-bottom: 5px; margin-bottom: 5px; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+    .header-left { flex: 1; min-width: 0; } .header-top { display: block; }
     .name-role h1 { font-size: 19pt; font-weight: 800; letter-spacing: -0.5px; color: #0f172a; line-height: 1; text-transform: uppercase; }
     .name-role .target-title { font-size: 9.5pt; font-weight: 600; color: #1d4ed8; margin-top: 3px; letter-spacing: 0.3px; }
-    .profile-photo { width: 52px; height: 62px; border-radius: 4px; border: 1.5px solid #cbd5e1; object-fit: cover; object-position: center top; display: block; }
+    .profile-photo { width: 75px; height: 90px; border-radius: 4px; border: 1.5px solid #cbd5e1; object-fit: cover; object-position: center top; display: block; flex-shrink: 0; }
     .contact-row { margin-top: 4px; margin-bottom: 2px; font-size: 8.1pt; color: #334155; display: flex; flex-wrap: wrap; row-gap: 4px; column-gap: 8px; align-items: center; line-height: 1.35; }
     .contact-item { display: inline-flex; align-items: center; gap: 3px; }
     .contact-row a { color: #0f172a; text-decoration: underline; text-underline-offset: 2px; font-weight: 500; display: inline-flex; align-items: center; gap: 3px; }
@@ -53,14 +53,14 @@
 <body>
   <div class="sheet">
     <header>
-      <div class="header-top">
-        <div class="name-role">
-          <h1>ABDELLAH EDAOUDI</h1>
-          <div class="target-title">Full Stack Webentwickler</div>
+      <div class="header-left">
+        <div class="header-top">
+          <div class="name-role">
+            <h1>ABDELLAH EDAOUDI</h1>
+            <div class="target-title">Full Stack Webentwickler</div>
+          </div>
         </div>
-        <img class="profile-photo" src="assets/profile.jpg" alt="Abdellah Edaoudi" />
-      </div>
-      <div class="contact-row">
+        <div class="contact-row">
         <span class="contact-item"><svg style="width:11px;height:11px;fill:#dc2626;flex-shrink:0;" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Laayoune, Marokko</span>
         <span class="sep">|</span>
         <span class="contact-item"><svg style="width:11px;height:11px;fill:#16a34a;flex-shrink:0;" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg> +212 609 085 357</span>
@@ -72,7 +72,9 @@
         <a href="https://github.com/AbdellahEdaoudi" target="_blank"><svg style="width:11px;height:11px;fill:#181717;flex-shrink:0;" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> github.com/AbdellahEdaoudi</a>
         <span class="sep">|</span>
         <a href="https://linkedin.com/in/abdellah-edaoudi" target="_blank"><svg style="width:14px;height:14px;fill:#0a66c2;flex-shrink:0;" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.74a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z"/></svg> linkedin.com/in/abdellah-edaoudi</a>
+        </div>
       </div>
+      <img class="profile-photo" src="assets/profile.jpg" alt="Abdellah Edaoudi" />
     </header>
 
     <!-- BERUFLICHES PROFIL -->
